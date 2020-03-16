@@ -10,8 +10,15 @@ spring:
           uri: https://gitee.com/gitteejava/iToken.git
           username: 1378975974@qq.com
           password: 1378975974@Wxb
+          search-paths: itoken-config/config/
           force-pull: true
-          search-paths: itoken-config/config/**
+      label: master
+  rabbitmq:
+    host: 112.126.59.115
+    port: 5672
+    username: guest
+    password: guest
+
 eureka:
   instance:
     hostname: ${spring.application.name}:${server.port}
@@ -21,3 +28,8 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:7001/eureka
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "bus-refresh"
