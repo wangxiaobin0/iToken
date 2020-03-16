@@ -1,0 +1,23 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: itoken-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/gitteejava/iToken.git
+          username: 1378975974@qq.com
+          password: 1378975974@Wxb
+          force-pull: true
+          search-paths: itoken-config/config/**
+eureka:
+  instance:
+    hostname: ${spring.application.name}:${server.port}
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka

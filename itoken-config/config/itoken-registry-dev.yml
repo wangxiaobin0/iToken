@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: itoken-registry
+
+eureka:
+  instance:
+    hostname: ${spring.application.name}:${server.port}
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+config:
+  info: version:1.0
