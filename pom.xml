@@ -11,6 +11,7 @@
         <module>itoken-common</module>
         <module>itoken-registry-eureka</module>
         <module>itoken-config</module>
+        <module>itoken-gateway</module>
     </modules>
     <packaging>pom</packaging>
 
