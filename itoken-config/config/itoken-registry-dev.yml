@@ -18,6 +18,3 @@ management:
     web:
       exposure:
         include: "*"
-
-config:
-  info: version:1.5
