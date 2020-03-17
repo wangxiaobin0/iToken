@@ -2,19 +2,19 @@ version: "3.1"
 services:
   itoken-registry-1:
     restart: always
-    image: itokenregistry1
+    image: itokenregistry
     container_name: iTokenRegistry1
     ports:
     - 7001:7001
   itoken-registry-2:
     restart: always
-    image: itokenregistry2
+    image: itokenregistry
     container_name: iTokenRegistry2
     ports:
-    - 7002:7002
+    - 7002:7001
   itoken-registry-3:
     restart: always
-    image: itokenregistry3
+    image: itokenregistry
     container_name: iTokenRegistry3
     ports:
-    - 7003:7003
+    - 7003:7001
