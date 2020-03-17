@@ -11,10 +11,10 @@ services:
     image: itokenregistry
     container_name: iTokenRegistry2
     ports:
-    - 7002:7001
+    - 7002:7002
   itoken-registry-3:
     restart: always
     image: itokenregistry
     container_name: iTokenRegistry3
     ports:
-    - 7003:7001
+    - 7003:7003
