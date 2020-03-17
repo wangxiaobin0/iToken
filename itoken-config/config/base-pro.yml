@@ -1,0 +1,24 @@
+spring:
+  # MQ配置
+  rabbitmq:
+    host: 112.126.59.115
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  instance:
+    hostname: ${spring.application.name}:${server.port}
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://112.126.59.115:7001/eureka,http://112.126.59.115:7002/eureka,http://112.126.59.115:7003/eureka
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

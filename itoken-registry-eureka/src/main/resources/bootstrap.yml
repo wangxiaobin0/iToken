@@ -5,7 +5,7 @@ spring:
   application:
     name: itoken-registry
   profiles:
-    active: dev
+    active: pro
   cloud:
     config:
       uri: http://112.126.59.115:3344
