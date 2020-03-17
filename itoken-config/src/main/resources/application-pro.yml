@@ -29,7 +29,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://112.126.59.115:7001/eureka
+      defaultZone: http://112.126.59.115:7001/eureka,http://112.126.59.115:7002/eureka,http://112.126.59.115:7003/eureka
 management:
   endpoints:
     web:
