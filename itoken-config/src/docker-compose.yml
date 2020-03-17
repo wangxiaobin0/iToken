@@ -1,0 +1,8 @@
+version: 3.1
+services:
+  itoken-config:
+    restart: always
+    image: config
+    container_name: config
+    ports:
+    - 3344:3344
